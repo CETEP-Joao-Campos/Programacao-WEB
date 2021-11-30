@@ -17,6 +17,7 @@ div {
     top: 133px;
     right: 55px;
     border-radius: 10px;
+    text-align: center;
 }
 
 input {
@@ -27,6 +28,33 @@ input {
     border-radius: 6px;
     font-size: 17px;
     color: lightgray;
+    margin: 4% 0 0 0;
+}
+
+#bt-login {
+    height: 48px;
+    width: 364px;
+    background-color: #1877fe;
+    color: white;
+    font-family: Helvetica, Arial;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+}
+
+a {
+    font-family: Arial;
+    font-size: 14px;
+    color: #1877fe;
+}
+
+a:visited,
+a:link {
+    text-decoration: none;
+} 
+
+a:hover {
+    text-decoration: underline;
 }
 
 </style>
@@ -38,10 +66,12 @@ input {
 <div>
 
     <form>
-        <br><input type="text" placeholder="Email ou telefone"><br><br>
-        <input type="password" placeholder="Senha"><br><br>
-        <input type="submit" value="Entrar">
+        <input type="text" placeholder="Email ou telefone">
+        <input type="password" placeholder="Senha">
+        <input type="submit" value="Entrar" id="bt-login">
     </form>
+
+    <br><a href="#">Esqueceu a senha?</a>
 
 </div>
 
