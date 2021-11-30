@@ -10,7 +10,7 @@ body {
     background-color: #f0f2f5;
 }
 
-div {
+#div-p {
     background-color: white;
     height: 350px;
     width: 396px;
@@ -19,13 +19,14 @@ div {
     right: 55px;
     border-radius: 8px;
     box-shadow: 0 5px 10px lightgrey;
+    text-align: center;
 }
 
 input {
     height: 22px;
     width: 330px;
     padding: 14px 16px;
-    margin: 4% 0 0 4%;
+    margin: 4% 0 0 0;
     border: 1px solid lightgray;
     border-radius: 6px;
     font-size: 17px;
@@ -54,17 +55,50 @@ input:focus {
     font-size: 14px;
 }
 
+#esqueci:visited,
+#esqueci:link {
+    text-decoration: none;
+}
+
+#esqueci:hover {
+    text-decoration: underline;
+}
+
+#linha {
+    border-bottom: 1px solid lightgray;
+    width: 364px;
+    margin: 4% 0 0 4%;
+}
+
+button {
+    background-color: #42b72a;
+    color: white;
+    font-family: Helvetica, Arial;
+    font-size: 17px;
+    font-weight: bold;
+    height: 48px;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 6px;
+    margin: 6% 0 0 0;
+}
+
 </style>    
 
 <body>
 
-    <div>
+    <div id="div-p">
         <form>
             <input type="text" placeholder="Email ou telefone">
             <input type="password" placeholder="Senha">
             <input type="submit" value="Entrar" id="bt-login">
         </form>
-        <a href="https://www.google.com" id="esqueci">Esqueceu a senha?</a>
+
+        <br><a href="https://www.google.com" id="esqueci">Esqueceu a senha?</a>
+
+        <div id="linha"></div>
+
+        <button>Criar nova conta</button>
     </div>
     
 </body>
